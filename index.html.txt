@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+<body> 
+  <div class="parallax">
+   
+      <div class="slides">
+        <!-- this is basic intro-->
+      
+        <div class="norm">
+          <h2 class="norm">
+            Hi,I am Prasannam Tiwari.
+          </h2>
+        </div>
+        <!-- navbar -->
+       
+    <div class="wrapper">
+     <div class="static-txt">I'm a</div> 
+    <ul class="dynamic-txt">
+      <li><span>STUDENT.</span></li>
+      <li><span>DEVELOPER.</span></li>
+      <li><span>FREELANCER.</span></li>
+      <li><span>DESIGNER.</span></li>
+    </ul>  
+    
+    </div>
+  </div>
+ </div>
+
+
+  <div class="doc" style="height:200px">
+    <div class="slide-wrapper">
+   <h3>I have learnt . </h3>
+    </div>
+    <button class="link pop-on-hover" onclick="alert('Hello world!')">
+      <a href=""></a>view resume</button>
+  </div>
+
+
+
+
+
+  <div class="parallax1">
+    <div class="doc1">
+      <h3 class="norm2">MY SKILL SET</h3>
+
+
+      <p style="line-height:2.0em;">
+        <br class="not">Html
+        
+        <br class="not">Css
+        <br class="not">Bootstrap
+        <br class="not">Figma
+        <br class="not">React
+        <br class="not">MongoDB
+      </p>
+      <div class="newspace1">
+      <div class="progress">
+        <div class="progress-value"></div>
+      </div>
+      </div>
+      <div class="newspace2">
+      <div class="progress">
+        <div class="progress-value1"></div>
+      </div>
+    </div>
+    <div class="newspace3">
+      <div class="progress">
+        <div class="progress-value2"></div>
+      </div>
+    </div>
+      <div class="newspace4">
+      <div class="progress">
+        <div class="progress-value3"></div>
+      </div>
+    </div>
+      <div class="newspace5">
+      <div class="progress">
+        <div class="progress-value4"></div>
+      </div>
+    </div>
+      <div class="newspace6">
+      <div class="progress">
+        <div class="progress-value5"></div>
+      </div>
+    </div>
+    
+
+    </div>
+
+  </div>
+
+
+  <div class="parallax2">
+    <div class="sideelement">
+    <h2 class="norm3">My Work And Projects</h2>
+    <div class="flex-container">
+      
+      <div class="main">
+        <a href="https://github.com/Prasannam23/amazegame"><img src="photo-1580234831315-438a4813685c.avif" width="400px" height="267px"></a>
+        <div class="middle">
+          <div class="text">Game</div>
+        </div>
+      </div>
+      <div class="main">
+        <a href="https://github.com/Prasannam23/aclock"><img src="photo-1456574808786-d2ba7a6aa654.avif"width=400px height="267px" alt=""></a>
+        <div class="middle">
+          <div class="text">Clock</div>
+        </div>
+      </div>
+      <div class="main">
+        <a href="https://github.com/Prasannam23/Prasannam23"><img src="photo-1511367461989-f85a21fda167.avif" width="400px" height="267px"></a>
+        <div class="middle">
+          <div class="text">Readme</div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
