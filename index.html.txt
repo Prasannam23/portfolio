@@ -6,9 +6,13 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+</head>
+
+<body>
 
 
-<body> 
+  
+  
   <div class="parallax">
    
       <div class="slides">
@@ -52,7 +56,7 @@
       <h3 class="norm2">MY SKILL SET</h3>
 
 
-      <p style="line-height:2.0em;">
+       <p style="line-height:2.0em;">
         <br class="not">Html
         
         <br class="not">Css
@@ -90,7 +94,7 @@
       <div class="progress">
         <div class="progress-value5"></div>
       </div>
-    </div>
+    </div> 
     
 
     </div>
@@ -104,21 +108,21 @@
     <div class="flex-container">
       
       <div class="main">
-        <a href="https://github.com/Prasannam23/amazegame"><img src="photo-1580234831315-438a4813685c.avif" width="400px" height="267px"></a>
+        <a href="https://github.com/Prasannam23/amazegame"><img src="photo-1580234831315-438a4813685c.avif" width="400px" height="267px">
         <div class="middle">
-          <div class="text">Game</div>
+          <a href="https://github.com/Prasannam23/amazegame"><div class="text">Game</div></a>
         </div>
       </div>
       <div class="main">
-        <a href="https://github.com/Prasannam23/aclock"><img src="photo-1456574808786-d2ba7a6aa654.avif"width=400px height="267px" alt=""></a>
+        <img src="photo-1456574808786-d2ba7a6aa654.avif"width=400px height="267px" alt="">
         <div class="middle">
-          <div class="text">Clock</div>
+          <a href="https://github.com/Prasannam23/aclock"><div class="text">Clock</div></a>
         </div>
       </div>
       <div class="main">
-        <a href="https://github.com/Prasannam23/Prasannam23"><img src="photo-1511367461989-f85a21fda167.avif" width="400px" height="267px"></a>
+        <img src="photo-1511367461989-f85a21fda167.avif" width="400px" height="267px">
         <div class="middle">
-          <div class="text">Readme</div>
+          <a href="https://github.com/Prasannam23/Prasannam23"><div class="text">Readme</div></a>
         </div>
       </div>
     </div>
@@ -143,6 +147,21 @@
         navbar.classList.remove("sticky");
       }
     }
+    window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.documentElement.scrollTop > 650) {
+    document.getElementById("myImg").className = "slideUp";
+  }
+}
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.documentElement.scrollTop > 650) {
+    document.getElementById("myImg1").className = "slideUp";
+  }
+}
+
   </script>
 
 </body>
