@@ -600,6 +600,11 @@ text-shadow: 2px 2px 4px #000;
 a.link{
 text-decoration:none;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 
   </style>
