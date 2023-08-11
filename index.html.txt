@@ -137,6 +137,12 @@
     </div>
 
   </div>
+ <div class="parallax3">
+    <div class="jack">
+      <h3>Conatct</h3>
+
+    </div>
+  </div>
  <footer class="footer">
   	 <div class="container10">
   	 	<div class="row">
