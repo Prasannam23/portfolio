@@ -138,11 +138,39 @@
 
   </div>
  <div class="parallax3">
-    <div class="jack">
-      <h3>Conatct</h3>
-
+        <div class="geo">
+    <!-- First container -->
+  <div class="container container_solid">
+    <div class="title_wrapper">
+      <h1>Contact</h1>
     </div>
   </div>
+
+  <!-- Second container -->
+  <div class="container container_image" aria-hidden="true">
+    <div class="title_wrapper">
+      <h1>Conatct</h1>
+    </div>
+  </div>
+</div>
+    <!-- <div class="jack">
+      <h3>Conatct</h3>
+      <div class="bold">
+      </div>
+      <div class="sideshow">
+        <form >
+          <label for="First-Name">First-Name</label><br>
+          <input type="first-text" name="first-name" id-="first-name"><br>
+          <label for="Last-Name">Last-Name</label><br>
+          <input type="text" name="last-name" id-="last-name"><br>
+          <label for="Email">Email</label><br>
+          <input type="text" id="email" name="email"><br>
+        </form>
+      </div> -->
+     </div>
+     </div>
+
+ 
  <footer class="footer">
   	 <div class="container10">
   	 	<div class="row">
