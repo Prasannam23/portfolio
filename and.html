@@ -877,88 +877,65 @@
     } */
     @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
 
-.header{
-  height: 100vh;
-}
 
-.container {
-  /* hide fixed overflow contents */
-  clip: rect(0, auto, auto, 0);
 
-  /* does not work if overflow = visible */
-  overflow: hidden;
+  .content1{
+    height: 80vh;
+    background-color: #b9b5b5; 
+    color: #000;
+    position: relative;
+  }
+  .log1>h2{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 200px;
+    text-shadow: #070707;
+    font-size: 40px;
+    font-weight: 30px;
+  }
+   .geek>h3{
+    position: absolute;
+    text-shadow: #070707;
+    font-size: 25px;
+    font-weight: 20px;
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  .geek>h4{
+    position: absolute;
+    text-shadow: #070707;
+    font-size: 20px;
+    font-weight: 17px;
+    margin-top: 60px;
+    
+  } 
+  .geek{
+    height: 200px;
+    background-color: aquamarine;
+    color: #000;
+    width: 680px;
+    margin-top: 150px;
+    margin-left: 130px;
+    position: absolute;
+    border-radius: 30px;
+    }
+  .nike{
+    position: absolute;
+    padding: 15px 25px;
+    background-color: #76d7f5;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 400px;
+    margin-left: 250px;
+    font-size: 25px;
+    font-weight: 20px;
+  }
 
-  /* only works with absolute positioning */
-  position: absolute;
-
-  /* Make sure containers are full-width and height */
-  height: 100vh;
-  left: 0;
-  width: 100%;
-  
-  
-  /* safari hack */
-  /* -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%); */
-}
-
-.container_solid {
-  background: white;
-  
-  /* position this container at the top of its parent element */
-  top: 0;
-}
-
-.title_wrapper {
-  position: fixed;
-  display: block;  
-  margin: auto;
-  width: 100%;
-  /* center the text wrapper vertically */
-  top: 50%;
-   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%); 
-          transform: translateY(-50%);
-}
-
-.title_wrapper h1 {
-  text-align: center;
-  font-size: 64px;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: 'Fraunces', serif;
-  font-weight: 900;
-}
-
-.container_solid .title_wrapper h1 {
-  /* the text background */
-  background: url(https://images.unsplash.com/photo-1575058752200-a9d6c0f41945?&q=85);
-  background-size: 100vw auto;
-  background-position: center;
-  
-  /* clip the text is possible */
- /* text-fill-color: transparent;  */
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  
-  /* fallback text color */
-  color: black;
-}
-
-.container_image {
-  /* Grab a free image from unsplash */
-  background-image: url(https://images.unsplash.com/photo-1575058752200-a9d6c0f41945?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-  background-size:100vw auto;
-  background-position: center;
-  background-attachment: fixed;
-  
-  /* position the second container below the first container */
-  top: 100vh;
-}
-
-.container_image .title_wrapper h1 {
-  color: white;
-}
 
   </style>
 </head>
@@ -1100,39 +1077,20 @@
     </div>
 
   </div>
-  <div class="parallax3">
-    <header>
-
-      <!-- First container -->
-      <div class="container container_solid">
-        <div class="title_wrapper">
-          <h1>The Great Outdoors</h1>
-        </div>
+  <div class="content1">
+    <div class="log1">
+      <h2>Contact</h2>
+      <div class="nim">
+      <div class="geek">
+        <h3>Lets Have A Talk</h3>
+        <h4>lets have a talk for intializing the the base and bottom line 
+          for having a <br>innovative idea with a gleaming future.
+        </h4>
       </div>
-    
-      <!-- Second container -->
-      <div class="container container_image" aria-hidden="true">
-        <div class="title_wrapper">
-          <h1>The Great Outdoors</h1>
-        </div>
-      </div>
-    
-    </header>
-    <!-- <div class="jack">
-      <h3>Conatct</h3>
-      <div class="bold">
-      </div>
-      <div class="sideshow">
-        <form >
-          <label for="First-Name">First-Name</label><br>
-          <input type="first-text" name="first-name" id-="first-name"><br>
-          <label for="Last-Name">Last-Name</label><br>
-          <input type="text" name="last-name" id-="last-name"><br>
-          <label for="Email">Email</label><br>
-          <input type="text" id="email" name="email"><br>
-        </form>
-      </div> -->
-    
+      <button type="button" class="nike" clickme="">clickme</button>
+    </div>
+    </div>
+  </div>
      </div>
 
 
