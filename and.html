@@ -919,22 +919,45 @@
     position: absolute;
     border-radius: 30px;
     }
-  .nike{
-    position: absolute;
+    .nike{
+    position: relative;
     padding: 15px 25px;
     background-color: #76d7f5;
     color: #000;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
     margin-top: 400px;
-    margin-left: 250px;
+    margin-left: 200px;
     font-size: 25px;
     font-weight: 20px;
+    border-top-left-radius: 0cqb;
+    display: inline-block;
   }
+  .content1#blur.active{
+    filter: blur(20px);
+  }
+  #popupp{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #fff;
+    visibility: hidden;
+    opacity:0;
+    transition: 0.5s;
+  }
+  #popupp.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+  }
+    
 
 
   </style>
@@ -1077,7 +1100,7 @@
     </div>
 
   </div>
-  <div class="content1">
+<div class="content1" id="blur">
     <div class="log1">
       <h2>Contact</h2>
       <div class="nim">
@@ -1087,12 +1110,14 @@
           for having a <br>innovative idea with a gleaming future.
         </h4>
       </div>
-      <button type="button" class="nike" clickme="">clickme</button>
+      <button type="button" class="nike" onclick="toggle()">Clickme</button>
     </div>
     </div>
   </div>
-     </div>
-
+  <div id="popupp" id="popupp">
+    <form action=""></form>
+    <button type="button" class="nike" onclick="toggle()">Close</button>
+  </div>
 
   <footer class="footer">
     <div class="container10">
@@ -1170,6 +1195,12 @@
       } else {
         navbar.classList.remove("sticky");
       }
+    }
+    function toggle(){
+      var blur = document.getElementById('blur');
+      blur.classList.toggle('active')
+      var popupp = document.getElementById('popupp');
+      popupp.classList.toggle('active')
     }
 
   </script>
