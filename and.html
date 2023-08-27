@@ -876,113 +876,107 @@
       width: 200px;
     } */
     @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
-
-
-
-  .content1{
-    height: 80vh;
-    background-color: #b9b5b5; 
-    color: #000;
-    position: relative;
-  }
-  .log1>h2{
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 200px;
-    text-shadow: #070707;
-    font-size: 40px;
-    font-weight: 30px;
-  }
-   .geek>h3{
-    position: absolute;
-    text-shadow: #070707;
-    font-size: 25px;
-    font-weight: 20px;
-    margin-top: 15px;
-    margin-left: 0px;
-  }
-  .geek>h4{
-    position: absolute;
-    text-shadow: #070707;
-    font-size: 20px;
-    font-weight: 17px;
-    margin-top: 60px;
     
-  } 
-  .geek{
-    height: 200px;
-    background-color: aquamarine;
-    color: #000;
-    width: 680px;
-    margin-top: 150px;
-    margin-left: 130px;
-    position: absolute;
-    border-radius: 30px;
-    }
-    .nike{
-    position: relative;
-    padding: 15px 25px;
-    background-color: #76d7f5;
-    color: #000;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    margin-top: 400px;
+  .nope{
+    height: 70vh;
+    background-color: #16b739;
+  }
+  .nope>h2{
+    color: #76d7f5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 120px;
     margin-left: 200px;
-    font-size: 25px;
-    font-weight: 20px;
-    border-top-left-radius: 0cqb;
-    display: inline-block;
+    font-size: 60px;
   }
-  .content1#blur.active{
-    filter: blur(20px);
-  }
-  #popupp{
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 600px;
-    padding: 50px;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
-    background: #fff;
-    visibility: hidden;
-    opacity:0;
-    transition: 0.5s;
-  }
-  #popupp.active{
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-  }
-   .side .sliding{
-    color: white;
-    font-family: "rubik",sans-serif;
-    font-size: 8vw;
-    margin: 0px 15vw;
-    width: 70vw;
-    position: absolute;
-  }
-  .side{
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-    position: absolute;
+  body {
+  background:#000;
+}
+.cater3-movingBG {
+    height: 100%;
+    background-image: url(http://salsaritas.johngroupinteractive.com/wp-content/uploads/2017/06/enchilada-bg.jpg);
+    background-size: 125%;
+    background-repeat: repeat-x;
+    animation: animatedBackground 15s linear alternate infinite;
+}
 
+  @keyframes animatedBackground {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 50% 0%; }
+    100% { background-position: 0% 0; }
+}  
+
+.flyinTxtCont {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-bottom: 10%;
+      margin-left: 2em;
+}
+.flyIn {
+    color:#fff;
+    font-family:'Raleway';
+    text-transform:uppercase;
+    line-height:1em;
+    position:relative;
+  text-shadow: 2px 2px 40px rgba(0,0,0,0.7);
+}
+.lineOne {
+  transition-delay:0.2s; 
+   transition:.4s ease in; 
+  animation: txtFlyIn 0.2s linear;
+}
+.lineTwo {
+    transition-delay:.4s; 
+    transition:.6s ease in;
+    animation: txtFlyIn .6s linear;
+}
+.lineThree {
+    transition-delay:.6s; 
+    transition:.8s ease in;
+    animation: txtFlyIn .9s linear;
+}
+.lineOne, .lineTwo, .lineThree {
+    font-size:110px;
+    font-weight: bold;
+    letter-spacing: 3px;
   }
-   #left {
-    background-color: var(--purple);
-    z-index: 2;
-    color: #ddd;
-  }
-  #right {
-    background-color: var(--yellow);
-    color: #4CAF50;
-  } 
+.lineFour {
+    transition-delay:2s; 
+    transition:2s ease in;
+    animation: fadeIn 2s linear;
+    width: 100%;
+    background-color:rgba(255,255,255,0.9);
+    display:inline-block;
+    color:#000;
+    /* box-size:border-box; */
+    max-width:63%;
+    max-width: 22em;
+    font-size: 32px;
+    padding: .2em .5em;
+    margin-top: 30px;
+}
+@keyframes fadeIn{
+    0% { opacity:0;}
+    100% { opacity:1;}
+}
+@keyframes txtFlyIn{
+    0% { transform:translateX(-100%); }
+    100% { transform:translateX(0%); }
+}
+
+
+
     
 
 
@@ -1126,28 +1120,17 @@
     </div>
 
   </div>
-<div class="content1" id="blur">
-    <div class="log1">
-      <h2>Contact</h2>
-      <div class="nim">
-      <div class="geek">
-        <h3>Lets Have A Talk</h3>
-        <h4>lets have a talk for intializing the the base and bottom line 
-          for having a <br>innovative idea with a gleaming future.
-        </h4>
+    <div class="nope">
+    <h2>Contact</h2>
+    <div class="cater3-movingBG">
+      <div class="flyinTxtCont">
+      <div class="flyIn lineOne">Lets</div>
+      <div class="flyIn lineTwo">Have </div>
+      <div class="flyIn lineThree">A Talk</div>
+        <div class="flyIn lineFour">think. Execute. inprovise. inspire.</div>
       </div>
-      <button type="button" class="nike" onclick="toggle()">Clickme</button>
-    </div>
-    </div>
-  </div>
-  <div id="popupp" id="popupp">
-    <form action="">
-        <label for="fname">First name<br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-    </form>
-    <button type="button" class="nike" onclick="toggle()">Close</button>
-  </div>
-
+      </div>
+   </div>
   <footer class="footer">
     <div class="container10">
       <div class="row">
@@ -1225,12 +1208,7 @@
         navbar.classList.remove("sticky");
       }
     }
-    function toggle(){
-      var blur = document.getElementById('blur');
-      blur.classList.toggle('active')
-      var popupp = document.getElementById('popupp');
-      popupp.classList.toggle('active')
-    }
+
 
   </script>
 
