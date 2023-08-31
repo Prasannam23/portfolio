@@ -876,8 +876,7 @@
       width: 200px;
     } */
     @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
-    
-.nope{
+  .nope{
     height: 75vh;
     /* background-color: #16b739; */
   
@@ -889,11 +888,12 @@
     margin-top: 50px; 
     margin-left: 150px;
     font-size: 60px;
+    text-shadow: 2px 2px 40px black;
   }
 .cater3-movingBG {
     height: 100%;
     /* background-image: url(http://salsaritas.johngroupinteractive.com/wp-content/uploads/2017/06/enchilada-bg.jpg); */
-    background-size: 125%;
+    background-size: 100%;
     background-repeat: repeat-x;
     animation: animatedBackground 15s linear alternate infinite;
      background-image:url(fernando-hernandez-JdoofvUDUwc-unsplash.jpg) ; 
@@ -925,8 +925,9 @@
     justify-content: flex-end; */
     padding-bottom: 10%;
       margin-left: 2em;
-      margin-top: 180px;
+      margin-top: 160px;
       position: absolute; 
+      margin-left: 120px;
       
 }
 .flyIn {
@@ -954,10 +955,7 @@
     transition-delay:0.4s; 
     transition:.6s ease in;
     animation: txtFlyIn .6s linear;
-    position: relative;
-    
-
-  
+    /* position: relative; */ 
 }
 .lineThree {
     transition-delay:0.6s; 
@@ -998,12 +996,110 @@
     0% { transform:translateX(-100%); }
     100% { transform:translateX(0%); }
 }
-
-
-
+.nope1{
+    height: 75vh;
+    /* background-color: #16b739; */
+  
+  }
+.cater3-movingBG1 {
+    height: 100%;
+    /* background-image: url(http://salsaritas.johngroupinteractive.com/wp-content/uploads/2017/06/enchilada-bg.jpg); */
+    background-size: 100%;
+    background-repeat: repeat-x;
+    animation: animatedBackground 15s linear alternate infinite;
+     background-image:url(fernando-hernandez-JdoofvUDUwc-unsplash.jpg) ; 
     
+     
+}
+
+  @keyframes animatedBackground {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 50% 0%; }
+    100% { background-position: 0% 0; }
+}  
+
+.flyinTxtCont1 {
+  /* background-color: #087933; */
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; */
+    /* -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; */
+    padding-bottom: 10%;
+      margin-left: 2em;
+      margin-top: 160px;
+      position: absolute; 
+      margin-left: 10px;
+      
+}
+.flyIn1 {
+  color: #FC6D6D;
+  font-family:'Raleway';
+  line-height:0.5em;
+  position:relative;
+  text-shadow: 2px 2px 40px rgba(0,0,0,0.7);
+  width: 800px;
+  padding-top: 50px;
 
 
+
+}
+.lineOne1 {
+   
+  transition-delay:0.2s; 
+   transition:.4s ease in; 
+  animation: txtFlyIn 1s linear;
+}
+.lineTwo1 {
+    transition-delay:0.4s; 
+    transition:.6s ease in;
+    animation: txtFlyIn 1.5s linear;
+    /* position: relative; */ 
+}
+.lineThree1 {
+    transition-delay:0.6s; 
+    transition:.8s ease in;
+    animation: txtFlyIn 2s linear;
+}
+.lineOne1, .lineTwo1, .lineThree1 {
+    font-size:110px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.lineFour1 {
+    transition-delay:2s; 
+    transition:2s ease in;
+    animation: fadeIn 2s linear;
+    width: 100%;
+    background-color:rgba(255,255,255,0.9);
+    display:inline-block;
+    color:#000;
+    /* box-size:border-box; */
+    max-width:63%;
+    max-width: 22em;
+    font-size: 32px;
+    padding: .2em .5em;
+    position: relative;
+  /* margin-top: 300px; */
+  
+}
+@keyframes fadeIn{
+    0% { opacity:0;}
+    100% { opacity:1;}
+}
+@keyframes txtFlyIn{
+    0% { transform:translateX(-100%); }
+    100% { transform:translateX(0%); }
+}
   </style>
 </head>
 
@@ -1024,12 +1120,17 @@
 
     <div class="slides">
       <!-- this is basic intro-->
-
-      <div class="norm">
-        <h2 class="norm">
-          Hi,I am Prasannam Tiwari.
-        </h2>
-      </div>
+        <div class="slides">
+      <!-- this is basic intro-->
+      <div class="nope1">
+        <div class="cater3-movingBG1">
+          <div class="flyinTxtCont1">
+          <div class="flyIn1 lineOne1">Hi I'am</div>
+          <div class="flyIn1 lineTwo1">Prasannam</div>
+          <div class="flyIn1 lineThree1">Tiwari</div>
+          </div>
+          </div>
+       </div>
       <!-- navbar -->
 
       <div class="wrapper">
