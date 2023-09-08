@@ -63,7 +63,7 @@
       justify-content: center;
       /* min-height: 100vh; */
       background: #080808;
-      width: 600px;
+      width: 670px;
       height: 650px;
       /* margin-left: 400px; */
 
@@ -71,20 +71,6 @@
       /* background-color: #04AA6D; */
       opacity: 0.6;
     }
-
-    /* <div class="wrapper">
-     <div class="static-txt">I'm a</div> 
-    <ul class="dynamic-txt">
-      <li><span>STUDENT.</span></li>
-      <li><span>DEVELOPER.</span></li>
-      <li><span>FREELANCER.</span></li>
-      <li><span>DESIGNER.</span></li>
-    </ul>  
-    
-    </div>
-  </div>
- </div> */
-
     .static-txt {
 
       margin-top: 278px;
@@ -171,7 +157,7 @@
       background-image: url("arun-prakash-orDIazrVPLA-unsplash.png");
 
       /* Set a specific height */
-      min-height: 750px;
+      min-height: 1100px;
 
       /* Create the parallax scrolling effect */
       background-attachment: fixed;
@@ -208,64 +194,12 @@
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
       background-color: #000;
+      font-family: 'Sintony', sans-serif;
+	    font-weight: 300;
+	    font-size: 13px;
     }
 
-    /* @media screen and (max-width: 600px) {
-      #navbar a:not(:first-child) {
-        display: none;
-      }
-
-      #navbar a.icon {
-        float: right;
-        display: block;
-      }
-    }
-
-    @media screen and (max-width: 600px) {
-      #navbar.responsive {
-        position: relative;
-      }
-
-      #navbar.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-    }
-    .header {
-      background-color: #f1f1f1;
-      padding: 30px;
-      text-align: center;
-    }
-
-    #navbar {
-      overflow: hidden;
-      background-color: #333;
-    }
-
-    #navbar a {
-      float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-
-    #navbar a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    #navbar a.active {
-      background-color: #04AA6D;
-      color: white;
-    }
-
-    */
     .content {
       padding: 16px;
     }
@@ -281,12 +215,12 @@
     }
 
     .doc {
-      background-color: rgb(53, 53, 53);
+      background-color: rgb(174, 166, 166);
       border-radius: 0px;
-      color: #f6f7f9;
+      color: #050505;
       position: relative;
       display: flex;
-
+      border-radius: 20px;
 
     }
 
@@ -297,7 +231,7 @@
       width: 600px;
       height: 400px;
       margin-left: 200px;
-      margin-top: 30px;
+      margin-top: 50px;
     }
 
     .pop-on-hover {
@@ -308,7 +242,7 @@
     }
 
     .pop-on-hover {
-      background-color: #4CAF50;
+      background-color: #70d673;
       border: #0e0e0e;
       color: white;
       padding: 15px 32px;
@@ -366,31 +300,48 @@
       margin-top: 200px;
       justify-content: center;
       margin-left: 180px;
+      flex-direction: column;
 
     }
 
     .flex-container>div {
       background-color: #fbfdfa;
-
+      display: flex;
       text-align: center;
       line-height: 75px;
       font-size: 30px;
       height: 267px;
-      
+      flex-direction: column;}
+    .flex-container2{
+      display: flex;
+      flex-wrap: nowrap;
+      position: absolute;
+      margin-top: 200px;
+      justify-content: center;
+      margin-left: 780px;
+      flex-direction: column;
 
     }
-
+    .flex-container2>div {
+      background-color: #fbfdfa;
+      display: flex;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+      height: 267px;
+      flex-direction: column;}
+    
     .link {
-
       display: inline-block;
-      color: #000;
-      background: #087933;
+      background: #010a4b;
       text-decoration: none;
+      border: #000;
+      margin-top: 105px;
     }
 
     .link:hover {
       text-decoration: none;
-      color: #000;
+      color: #ffffff;
     }
 
     /*==================*/
@@ -447,15 +398,15 @@
 
     .norm3 {
       position: absolute;
-      margin-top: 100px;
+      margin-top: 90px;
       margin-left: 100px;
       text-shadow: 2px 2px 4px #000;
     }
 
     .sideelement {
       position: absolute;
-      min-height: 750px;
-      min-width: 700px;
+      min-height: 1100px;
+      min-width: 570px;
       background: #181717;
 
     }
@@ -480,7 +431,7 @@
       width: 50%;
       box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
       transition: 0.5s;
-
+      margin-left: 150px;
     }
 
     .main img {
@@ -492,7 +443,23 @@
       z-index: 1;
 
     }
+    .main2 {
+      position: relative;
+      width: 50%;
+      box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+      transition: 0.5s;
+      margin-left: 150px;
+    }
 
+    .main2 img {
+      display: block;
+    }
+
+    .main2:hover {
+      transform: scale(1.2);
+      z-index: 1;
+
+    }
     .image {
       opacity: 1;
       display: block;
@@ -507,12 +474,19 @@
       opacity: 0;
       position: absolute;
       top: 50%;
-      left: 50%;
+      margin-left: 180px;
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-
     }
-
+    .middle2 {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      margin-left: 180px;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
     a:link {
       text-decoration: none;
     }
@@ -524,6 +498,20 @@
     .main:hover .middle {
       opacity: 1;
     }
+    .main2:hover .image {
+      opacity: 0.3;
+    }
+
+    .main2:hover .middle2 {
+      opacity: 1;
+    }
+    /* .main2:hover .image {
+      opacity: 0.3;
+    }
+
+    .main2:hover .middle2 {
+      opacity: 1;
+    } */
 
     .text {
       background-color: #76d7f5;
@@ -532,6 +520,7 @@
       padding: 16px 32px;
       border-radius: 10px;
       border-style: none;
+      margin-left: 50px;
     }
 
     .progress {
@@ -669,9 +658,6 @@
         width: 83%;
       }
     }
-
-
-
     .newspace1 {
       position: absolute;
       padding: 20px;
@@ -785,6 +771,7 @@
     .footer-col {
       width: 25%;
       padding: 0 15px;
+      
     }
 
     .footer-col h4 {
@@ -794,6 +781,7 @@
       margin-bottom: 35px;
       font-weight: 500;
       position: relative;
+    
     }
 
     .footer-col h4::before {
@@ -805,10 +793,12 @@
       height: 2px;
       box-sizing: border-box;
       width: 50px;
+      
     }
 
     .footer-col ul li:not(:last-child) {
       margin-bottom: 10px;
+      
     }
 
     .footer-col ul li a {
@@ -820,19 +810,22 @@
       color: #bbbbbb;
       display: block;
       transition: all 0.3s ease;
+  
     }
 
     .footer-col ul li a:hover {
       color: #ffffff;
       padding-left: 8px;
+    
     }
 
     .footer-col .social-links a {
       display: inline-block;
       height: 40px;
       width: 40px;
-      background-color: rgb(27, 15, 104)
-        /*rgba(255,255,255,0.2); */
+      background-color: #24262b;
+        /*rgba(255,255,255,0.2); 
+      ;
       ;
       margin: 0 10px 10px 0;
       text-align: center;
@@ -840,14 +833,17 @@
       border-radius: 50%;
       color: #ffffff;
       transition: all 0.5s ease;
+      
     }
 
     .footer-col .social-links a:hover {
       color: #24262b;
       background-color: #ffffff;
+
     }
 
     /*responsive*/
+  }
     @media(max-width: 767px) {
       .footer-col {
         width: 50%;
@@ -860,26 +856,22 @@
         width: 100%;
       }
     }
-    /* .jack{
-      color: #000;
-    }
-    .bold{
-      background: #000;
-      margin-left: 1240px;
-      width: 300px;
-      height: 600px;
-    }
-    .sideshow{
-      background-color: #000;
-      color: #ddd;
-      height: 200px;
-      width: 200px;
-    } */
     @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+
   .nope{
     height: 75vh;
     /* background-color: #16b739; */
-  
+    background-image: url('fernando-hernandez-JdoofvUDUwc-unsplash.jpg');
+
+/* Set a specific height */
+min-height: 650px;
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+
   }
   .nope>h2{
     color: #020202;
@@ -893,10 +885,10 @@
 .cater3-movingBG {
     height: 100%;
     /* background-image: url(http://salsaritas.johngroupinteractive.com/wp-content/uploads/2017/06/enchilada-bg.jpg); */
-    background-size: 100%;
-    background-repeat: repeat-x;
+    /* background-size: 100%;
+    background-repeat: repeat-x; */
     animation: animatedBackground 15s linear alternate infinite;
-     background-image:url(fernando-hernandez-JdoofvUDUwc-unsplash.jpg) ; 
+     /* background-image:url(fernando-hernandez-JdoofvUDUwc-unsplash.jpg) ;  */
     
      
 }
@@ -999,7 +991,16 @@
 .nope1{
     height: 75vh;
     /* background-color: #16b739; */
-  
+       background-image: url("photo-1562813733-b31f71025d54.avif");
+
+      /* Set a specific height */
+      min-height: 650px;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
   }
 .cater3-movingBG1 {
     height: 100%;
@@ -1007,7 +1008,7 @@
     background-size: 100%;
     background-repeat: repeat-x;
     animation: animatedBackground 15s linear alternate infinite;
-     background-image:url(fernando-hernandez-JdoofvUDUwc-unsplash.jpg) ; 
+     /* background-image:url(fernando-hernandez-JdoofvUDUwc-unsplash.jpg) ;  */
     
      
 }
@@ -1089,8 +1090,7 @@
     font-size: 32px;
     padding: .2em .5em;
     position: relative;
-  /* margin-top: 300px; */
-  
+    margin-top: 20px;
 }
 @keyframes fadeIn{
     0% { opacity:0;}
@@ -1100,6 +1100,179 @@
     0% { transform:translateX(-100%); }
     100% { transform:translateX(0%); }
 }
+  .btn1{
+  height: 70px;
+  width: 140px;
+  border-radius: 15px;
+  position: relative;
+  margin-top: 270px;
+  margin-left: 1100px;
+  display: inline-block;
+  border: 2px solid black;
+  font-size: 20px;
+  font-weight: 15px;
+  text-decoration: none;
+  color: #fff;
+} 
+.btn1{
+  color: #070707; 
+  border-color: #000;
+}
+.btn1:hover{
+  color:white ;
+  background-color: #020202;
+  border-color: #76d7f5;
+}
+.btn2{
+  position: relative;
+  border: 2px solid black;
+  height: 40px;
+  width: 80px;
+  color: #070707; 
+  border-color: #000;
+  /* margin-bottom: 200px; */
+  margin-left: 675px;
+  border-radius: 10px;
+}
+.btn2:hover{
+  color:white ;
+  background-color: #020202;
+  border-color: #76d7f5;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container5 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.nope#blur.active{
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+
+}
+.nope .cater3-movingBG
+{
+ position: relative;
+}
+#popupp.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+#popupp
+{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 900px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+  background: #fff;
+  visibility: hidden; 
+  opacity: 0;
+  transition: 0.5s;
+  color: #45a049;
+  height: 702px;
+}
+textarea{
+  background-color: #000;
+  color: #000;
+}
+.color2{
+  background-color: #000;
+  z-index: 40;
+}
+.newcontent{
+  background-color:rgb(174, 166, 166) ;
+  color: #000;
+  height: 120px;
+  z-index: 200;
+  border-style: solid;
+  border-width: 2px;
+}
+.newcontent h3{
+  margin-top: 5px;
+  font-size: 25px;
+  font-weight: 20px;
+  
+}
+.visit{
+  background-color: #04AA6D;
+  width: 600px;
+  margin-left: 700px;
+  height: 267px;
+  position: absolute;
+  overflow: hidden;
+  margin-top:200px ;
+  display: none;
+}
+.visit h3{
+  margin-left: 10px;
+}
+.visit1{
+  background-color: #383b3a;
+  width: 600px;
+  margin-left: 700px;
+  height: 267px;
+  position: absolute;
+  overflow: hidden;
+  margin-top:467px ;
+  display: none;
+}
+.visit1 h3{
+  margin-left: 10px;
+}
+.visit2{
+  background-color: #c5f1e1;
+  width: 600px;
+  margin-left: 700px;
+  height: 267px;
+  position: absolute;
+  overflow: hidden;
+  margin-top:734px ;
+  display: none;
+}
+.visit2 h3{
+  margin-left: 10px;
+}
+span:hover + .visit{
+  display: block;
+}
+.touch img:hover + .visit1{
+  display: block;
+}
+.touch img:hover + .visit2{
+  display: block;
+}
+
   </style>
 </head>
 
@@ -1120,8 +1293,6 @@
 
     <div class="slides">
       <!-- this is basic intro-->
-        <div class="slides">
-      <!-- this is basic intro-->
       <div class="nope1">
         <div class="cater3-movingBG1">
           <div class="flyinTxtCont1">
@@ -1131,7 +1302,9 @@
           </div>
           </div>
        </div>
+       
       <!-- navbar -->
+    
 
       <div class="wrapper">
         <div class="static-txt">I'm a</div>
@@ -1147,13 +1320,14 @@
   </div>
 
 
-  <div class="doc" style="height:200px">
+  <div class="doc" style="height:250px">
     <div class="slide-wrapper">
-      <h3>I have learnt different coding languages and still learing different languages,
-        i am working on some projects . </h3>
+      <h3>I have learnt different coding languages like c,c++,javascript,python and i am learning web development
+        where as i have worked on diiferent projects where mostly i have used HTML,CSS,JAVASCRIPT,REACT.JS,FIGMA for UI and UX.
+         </h3>
     </div>
     <button class="link pop-on-hover" onclick="alert('Hello world!')">
-      <a href=""></a>view resume</button>
+      <a href="#"></a>view resume</button>
   </div>
 
 
@@ -1204,7 +1378,7 @@
           <div class="progress-value5"></div>
         </div>
       </div>
-
+      
 
     </div>
 
@@ -1217,16 +1391,17 @@
       <div class="flex-container">
 
         <div class="main">
-          <a href="https://github.com/Prasannam23/amazegame"><img src="photo-1580234831315-438a4813685c.avif"
+          <div class="jjj222"><img class="touch" src="photo-1580234831315-438a4813685c.avif"
               width="400px" height="267px">
             <div class="middle">
               <a href="https://github.com/Prasannam23/amazegame">
                 <div class="text">Game</div>
               </a>
             </div>
+          </div>
         </div>
         <div class="main">
-          <img src="photo-1456574808786-d2ba7a6aa654.avif" width=400px height="267px" alt="">
+          <img class="touch" src="photo-1456574808786-d2ba7a6aa654.avif" width=400px height="267px" alt="">
           <div class="middle">
             <a href="https://github.com/Prasannam23/aclock">
               <div class="text">Clock</div>
@@ -1234,17 +1409,54 @@
           </div>
         </div>
         <div class="main">
-          <img src="photo-1511367461989-f85a21fda167.avif" width="400px" height="267px">
+          <img class="touch" src="photo-1511367461989-f85a21fda167.avif" width="400px" height="267px">
           <div class="middle">
             <a href="https://github.com/Prasannam23/Prasannam23">
               <div class="text">Readme</div>
             </a>
           </div>
+       
         </div>
       </div>
-    </div>
+      <div class="flex-container2">
+        <div class="main2">
+          <img class="touch" src="roman-skrypnyk-DEga33BYvmA-unsplash.png"
+              width="400px" height="267px">
+            <div class="middle2">
+              <a href="https://github.com/Prasannam23/amazegame">
+                <div class="text">Calculator</div>
+              </a>
+            </div>
+        </div>
+        <div class="main2">
+          <img class="touch" src="peter-gargiulo-cGNCepznaV8-unsplash.jpg"
+              width="400px" height="267px">
+            <div class="middle2">
+              <a href="https://github.com/Prasannam23/amazegame">
+                <div class="text">Other-Projects</div>
+              </a>
+            </div>
+          </div>
+          <div class="main2">
+            <img class="touch" src="https://plus.unsplash.com/premium_photo-1685214580428-7eae1a78e7bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bG9naW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                width="400px" height="267px">
+              <div class="middle2">
+                <a href="https://github.com/Prasannam23/amazegame">
+                  <div class="text">Login_Page</div>
+                </a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>    
+  
 
+  
+  <div class="newcontent" >
+    <h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">For viewing my other projects and contributions please checkout my github profile</h3>
   </div>
+
+
    <div class="nope" id="blur">
     <h2>Contact</h2>
     <div class="cater3-movingBG">
@@ -1257,7 +1469,7 @@
       <button class="btn1" onclick="toggle()">Contact</button>
       </div>
    </div>
-   <div id="popupp">
+   <div class="color2" id="popupp">
     <h1>Contact</h1>
     <div class="container5">
       <button class="btn2" onclick="toggle()">close</button>
@@ -1273,10 +1485,11 @@
           <option value="australia">Australia</option>
           <option value="canada">Canada</option>
           <option value="usa">USA</option>
+          <option value="usa">India</option>
         </select>
     
-        <label for="subject">Comment/Work</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <label for="subject">Comment/write</label>
+        <textarea id="subject" name="subject" placeholder="Write a Comment" style="height:200px"></textarea>
         
         <input type="submit" value="Submit">
       </form>
@@ -1297,19 +1510,19 @@
         <div class="footer-col">
           <h4>Check Git Repository</h4>
           <ul>
-            <li><a href="#">watch</a></li>
-            <li><a href="#">game</a></li>
-            <li><a href="#">readme</a></li>
-            <li><a href="#">---</a></li>
+            <li><a href="https://github.com/Prasannam23/aclock">watch</a></li>
+            <li><a href="https://github.com/Prasannam23/amazegame">game</a></li>
+            <li><a href="https://github.com/Prasannam23/Prasannam23">readme</a></li>
+            <li><a href="https://github.com/Prasannam23/project_upload">more projects</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>follow Me</h4>
           <div class="social-links">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://twitter.com/TiwariPrasannam"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/prasannam-tiwari-623a9a269/"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>
@@ -1360,4 +1573,5 @@
 
 </body>
 
-</html> 
+</html>
+ 
