@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+  <div class="cursor">
   <div class="parallax">
     <div class="container">
       <div class="navcode" id="navbar">
@@ -73,7 +73,6 @@
 
       <p style="line-height:2.0em;">
         <br class="not">Html
-
         <br class="not">Css
         <br class="not">Bootstrap
         <br class="not">Figma
@@ -110,8 +109,36 @@
           <div class="progress-value5"></div>
         </div>
       </div>
-      
-
+    <div class="scrolleffect">
+      <div class="conc reveal">
+        <div class="cards">
+          <div class="img-cards">
+            <img src="icons8-html-150.png" alt="">
+          </div>
+          <div class="img-cards">
+            <img src="icons8-html-150.png" alt="">
+          </div>
+          <div class="img-cards">
+            <img src="icons8-html-150.png" alt="">
+          </div>
+          <div class="img-cards">
+            <img src="icons8-html-150.png" alt="">
+          </div>
+          <div class="img-cards">
+            <img src="icons8-html-150.png" alt="">
+          </div>
+          <div class="img-cards">
+            <img src="icons8-html-150.png" alt="">
+          </div>
+          <div class="img-cards">
+            <img src="icons8-html-150.png" alt="">
+          </div>
+          <div class="img-cards">
+            <img src="icons8-html-150.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
 
   </div>
@@ -136,15 +163,15 @@
           <img class="touch" src="photo-1456574808786-d2ba7a6aa654.avif" width=400px height="267px" alt="">
           <div class="middle">
              <a href="https://github.com/Prasannam23/aclock"> 
-              <div class="text">A Clock</div>
+              <div class="text">A_Clock</div>
              </a> 
           </div>
         </div>
         <div class="main">
-          <img class="touch" src="photo-1511367461989-f85a21fda167.avif" width="400px" height="267px">
+          <img class="touch" src="bottom-view-hello-written-yellow-sticky-note-black-pencil-black-pencil-sharpener-notepad-dark-background.jpg" width="400px" height="267px">
           <div class="middle">
              <a href="https://github.com/Prasannam23/Prasannam23">
-              <div class="text">Read-Me</div>
+              <div class="text">Read_Me</div>
              </a> 
           </div>
        
@@ -165,7 +192,7 @@
               width="400px" height="267px">
             <div class="middle2">
                <a href="https://github.com/Prasannam23/amazegame"> 
-                <div class="text">Meme-Generator</div>
+                <div class="text">Meme_Generator</div>
                </a>
             </div>
           </div>
@@ -174,20 +201,15 @@
                 width="400px" height="267px">
               <div class="middle2">
                  <a href="https://github.com/Prasannam23/amazegame">
-                  <div class="text">Login-authentication-page</div>
+                  <div class="text">Login_authentication-page</div>
                  </a> 
               </div>
             </div>
         </div>
       </div>
     </div>    
-  
-
-  
-  <div class="newcontent" >
-    <h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">For viewing my other projects and contributions please checkout my github profile</h3>
-  </div>
-    <div class="sideshow">
+   
+  <div class="sideshow">
     <div class="textach"><h1>ACHIEVEMENTS AND PARTICIPATION</h1></div>
     <div class="contentcontainer">
       <div class="imageslider">
@@ -204,6 +226,12 @@
       </div>
     </div>
   </div>
+
+  
+  <div class="newcontent" >
+    <h3 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">For viewing my other projects and contributions please checkout my github profile</h3>
+  </div>
+
 
    <div class="nope" id="blur">
     <h2>Contact</h2>
@@ -240,6 +268,8 @@
         <textarea id="subject" name="subject" placeholder="Write a Comment" style="height:200px"></textarea>
         
         <input type="submit" value="Submit">
+
+
       </form>
     </div>
   </div>
@@ -258,7 +288,7 @@
         <div class="footer-col">
           <h4>Check Git Repository</h4>
           <ul>
-           <li><a href="https://github.com/Prasannam23/aclock"></a>a_clock</li> 
+           <li><a href="https://github.com/Prasannam23/aclock">a_clock</a></li> 
            <li><a href="https://github.com/Prasannam23/amazegame">game</a></li> 
            <li><a href="https://github.com/Prasannam23/Prasannam23">readme</a></li>
             <li><a href="https://github.com/aryan-tiwarii">MY-PROJECTS</a></li>
@@ -277,8 +307,9 @@
      </div>
   </footer>
 </div>
+  </div>
 
-  <script>
+  <script type="text/javascript">
     window.onscroll = function () { myFunction() };
 
     var navbar = document.getElementById("navbar");
@@ -316,7 +347,39 @@
       var popupp = document.getElementById('popupp');
       popupp.classList.toggle('active')
      }
+    // const cursor = document.querySelector(".cursor");
 
+    // document.addEventListener("mousemove",(e) => {
+    //   let x = e.pageX;
+    //   let y = e.pageY;
+
+    //   cursor.style.top = y + "px"
+    //   cursor.style.left = x + "px"
+    // })
+    // document.addEventListener("mouseout",() => {
+    //   cursor.style.display = "none";
+    // })
+
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+
+      for(var i = 0; i < reveals.lenght; i++){
+        
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 100;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
   </script>
 
 </body>
