@@ -1291,13 +1291,13 @@ span:hover + .visit{
 }
 .imageslider{
   position: relative;
-  max-width: 48rem;
-  max-width: 48rem;
+  max-width: 50rem;
+  min-width: 50rem;
   margin: 0 auto;
 }
 .slider{
   display: flex;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/9; 
   overflow-x: auto;
   scroll-behavior:smooth;
   scroll-snap-type: x mandatory;
@@ -1346,4 +1346,38 @@ span:hover + .visit{
   height: 75px;
   width: 75px;
 }
+.main{
+  margin: 10px 0px;
+  position: relative;
+  margin-left: 120px;
+}
+.main2{
+  margin: 10px 0px;
+  position: relative;
+  margin-left: 170px;
+}
+.cards{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin-top: 420px;
+  margin-left: 150px;
+}
+.reveal{
+  opacity: 0;
+  transform: translateY(150px);
+  position: relative;
+  transition: all 3s ease;
+}
+.reveal.active{
+  opacity: 1;
+  transform: translateY(0px);
   
+}
+.scrolleffect{
+    min-height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
