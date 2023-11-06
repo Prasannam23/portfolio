@@ -10,7 +10,7 @@
     
     .parallax {
      
-      background-image: url("photo-1562813733-b31f71025d54.avif");
+      background-image: url("photo-1511367461989-f85a21fda167.avif");
 
       /* Set a specific height */
       min-height: 650px;
@@ -147,7 +147,7 @@
 
     .parallax2 {
       /* The image used */
-      background-image: url("arun-prakash-orDIazrVPLA-unsplash.png");
+      background-image: url("arun-prakash-orDIazrVPLA-unsplash (1).png");
 
       /* Set a specific height */
       min-height: 1100px;
@@ -452,7 +452,6 @@
     .main2:hover {
       transform: scale(1.2);
       z-index: 1;
-
     }
     .image {
       opacity: 1;
