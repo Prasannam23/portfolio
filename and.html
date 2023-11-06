@@ -109,7 +109,7 @@
           <div class="progress-value5"></div>
         </div>
       </div>
-      <div class="scrolleffect">
+    <div class="scrolleffect">
       <div class="conc reveal">
         <div class="cards">
           <div class="img-cards">
@@ -210,6 +210,7 @@
     </div>    
    
   <div class="sideshow">
+    
     <div class="textach"><h1>ACHIEVEMENTS AND PARTICIPATION</h1></div>
     <div class="contentcontainer">
       <div class="imageslider">
@@ -360,14 +361,34 @@
     //   cursor.style.display = "none";
     // })
 
-    window.addEventListener('scroll', reveal);
-     function reveal() {
+    // window.addEventListener('scroll', reveal);
+
+    // function reveal(){
+    //   var reveals = document.querySelectorAll('.reveal');
+
+    //   for(var i = 0; i < reveals.lenght; i++){
+        
+    //     var windowheight = window.innerHeight;
+    //     var revealtop = reveals[i].getBoundingClientRect().top;
+    //     var revealpoint = 100;
+
+    //     if(revealtop < windowheight - revealpoint){
+    //       reveals[i].classList.add('active');
+
+    //     }
+    //     else{
+    //       reveals[i].classList.remove('active');
+    //     }
+    //   }
+    // }
+
+    function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+    var elementVisible = 80;
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
