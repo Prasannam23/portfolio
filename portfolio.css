@@ -10,7 +10,7 @@
     
     .parallax {
      
-      background-image: url("photo-1562813733-b31f71025d54.avif");
+      background-image: url("photo-1511367461989-f85a21fda167.avif");
 
       /* Set a specific height */
       min-height: 650px;
@@ -147,7 +147,7 @@
 
     .parallax2 {
       /* The image used */
-      background-image: url("arun-prakash-orDIazrVPLA-unsplash.png");
+      background-image: url("arun-prakash-orDIazrVPLA-unsplash (1).png");
 
       /* Set a specific height */
       min-height: 1100px;
@@ -452,7 +452,6 @@
     .main2:hover {
       transform: scale(1.2);
       z-index: 1;
-
     }
     .image {
       opacity: 1;
@@ -1267,6 +1266,7 @@ span:hover + .visit{
   display: flex;
   justify-content: center;
   border-radius:20px;
+  background-color: rgb(26, 26, 27);
 }
 .sideshow h1{
   color: #070000;
@@ -1287,17 +1287,18 @@ span:hover + .visit{
 .contentcontainer{
   padding: 2rem;
   margin-top: 150px;
-  margin-right: 600px;
+  margin-right: 100px;
 }
 .imageslider{
   position: relative;
-  max-width: 48rem;
-  max-width: 48rem;
+  max-width: 50rem;
+  min-width: 50rem;
   margin: 0 auto;
+  margin-left: 100px;
 }
 .slider{
   display: flex;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/9; 
   overflow-x: auto;
   scroll-behavior:smooth;
   scroll-snap-type: x mandatory;
@@ -1346,4 +1347,38 @@ span:hover + .visit{
   height: 75px;
   width: 75px;
 }
+.main{
+  margin: 10px 0px;
+  position: relative;
+  margin-left: 120px;
+}
+.main2{
+  margin: 10px 0px;
+  position: relative;
+  margin-left: 170px;
+}
+.cards{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin-top: 420px;
+  margin-left: 150px;
+}
+.reveal{
+  opacity: 0;
+  transform: translateY(150px);
+  position: relative;
+  transition: all 3s ease;
+}
+.reveal.active{
+  opacity: 1;
+  transform: translateY(0px);
   
+}
+.scrolleffect{
+    min-height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }

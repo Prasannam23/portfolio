@@ -45,6 +45,7 @@
           <li><span>DEVELOPER.</span></li>
           <li><span>FREELANCER.</span></li>
           <li><span>DESIGNER.</span></li>
+          <li><span>PLAYBOY.</span></li>
         </ul>
 
       </div>
@@ -116,25 +117,25 @@
             <img src="icons8-html-150.png" alt="">
           </div>
           <div class="img-cards">
-            <img src="icons8-html-150.png" alt="">
+            <img src="icons8-css-150.png" alt="">
           </div>
           <div class="img-cards">
-            <img src="icons8-html-150.png" alt="">
+            <img src="icons8-javascript-150.png" alt="">
           </div>
           <div class="img-cards">
-            <img src="icons8-html-150.png" alt="">
+            <img src="icons8-bootstrap-155.png" alt="">
           </div>
           <div class="img-cards">
-            <img src="icons8-html-150.png" alt="">
+            <img src="icons8-react-150.png" alt="">
           </div>
           <div class="img-cards">
-            <img src="icons8-html-150.png" alt="">
+            <img src="icons8-mongodb-150.png" alt="">
           </div>
           <div class="img-cards">
-            <img src="icons8-html-150.png" alt="">
+            <img src="icons8-mysql-150.png" alt="">
           </div>
           <div class="img-cards">
-            <img src="icons8-html-150.png" alt="">
+            <img src="" alt="">
           </div>
         </div>
       </div>
@@ -160,7 +161,7 @@
           </div>
         </div>
         <div class="main">
-          <img class="touch" src="photo-1456574808786-d2ba7a6aa654.avif" width=400px height="267px" alt="">
+          <img class="touch" src="moritz-kindler-mGFHA_0TWnA-unsplash (2).jpg" width=400px height="267px" alt="">
           <div class="middle">
              <a href="https://github.com/Prasannam23/aclock"> 
               <div class="text">A_Clock</div>
@@ -168,7 +169,7 @@
           </div>
         </div>
         <div class="main">
-          <img class="touch" src="bottom-view-hello-written-yellow-sticky-note-black-pencil-black-pencil-sharpener-notepad-dark-background.jpg" width="400px" height="267px">
+          <img class="touch" src="alexander-grey-eMP4sYPJ9x0-unsplash.jpg" width="400px" height="267px">
           <div class="middle">
              <a href="https://github.com/Prasannam23/Prasannam23">
               <div class="text">Read_Me</div>
@@ -188,7 +189,7 @@
             </div>
         </div>
         <div class="main2">
-          <img class="touch" src="peter-gargiulo-cGNCepznaV8-unsplash.jpg"
+          <img class="touch" src="keagan-henman-_HL4zktciVg-unsplash.jpg"
               width="400px" height="267px">
             <div class="middle2">
                <a href="https://github.com/Prasannam23/amazegame"> 
@@ -197,7 +198,7 @@
             </div>
           </div>
           <div class="main2">
-            <img class="touch" src="firmbee-com-DfMMzzi3rmg-unsplash.jpg"
+            <img class="touch" src="firmbee-com-DfMMzzi3rmg-unsplash (1).jpg"
                 width="400px" height="267px">
               <div class="middle2">
                  <a href="https://github.com/Prasannam23/amazegame">
@@ -210,6 +211,7 @@
     </div>    
    
   <div class="sideshow">
+    
     <div class="textach"><h1>ACHIEVEMENTS AND PARTICIPATION</h1></div>
     <div class="contentcontainer">
       <div class="imageslider">
@@ -281,7 +283,7 @@
         <div class="footer-col">
           <h4>company</h4>
           <ul>
-            <li><a href="https://github.com/aryan-tiwarii">About Me</a></li>
+            <li><a href="https://github.com/Prasannam23">About Me</a></li>
             <li><a href="#">My Thesis</a></li>
           </ul>
         </div>
@@ -291,7 +293,7 @@
            <li><a href="https://github.com/Prasannam23/aclock">a_clock</a></li> 
            <li><a href="https://github.com/Prasannam23/amazegame">game</a></li> 
            <li><a href="https://github.com/Prasannam23/Prasannam23">readme</a></li>
-            <li><a href="https://github.com/aryan-tiwarii">MY-PROJECTS</a></li>
+            <li><a href="https://github.com/Prasannam23">MY-PROJECTS</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -360,26 +362,45 @@
     //   cursor.style.display = "none";
     // })
 
-    window.addEventListener('scroll', reveal);
+    // window.addEventListener('scroll', reveal);
 
-    function reveal(){
-      var reveals = document.querySelectorAll('.reveal');
+    // function reveal(){
+    //   var reveals = document.querySelectorAll('.reveal');
 
-      for(var i = 0; i < reveals.lenght; i++){
+    //   for(var i = 0; i < reveals.lenght; i++){
         
-        var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 100;
+    //     var windowheight = window.innerHeight;
+    //     var revealtop = reveals[i].getBoundingClientRect().top;
+    //     var revealpoint = 100;
 
-        if(revealtop < windowheight - revealpoint){
-          reveals[i].classList.add('active');
+    //     if(revealtop < windowheight - revealpoint){
+    //       reveals[i].classList.add('active');
 
-        }
-        else{
-          reveals[i].classList.remove('active');
-        }
-      }
+    //     }
+    //     else{
+    //       reveals[i].classList.remove('active');
+    //     }
+    //   }
+    // }
+
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 80;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
     }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
   </script>
 
 </body>
