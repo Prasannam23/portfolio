@@ -5,8 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="portfolio.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
- 
+   
 </head>
+<style>
+  /* Your existing styles */
+
+  /* Media Query for Mobile Devices */
+  @media only screen and (max-width: 468px) {
+    /* Define styles for mobile devices here */
+    body {
+      /* Example: Adjust body font-size or other styles for mobile */
+      font-size: 14px;
+    }
+
+    /* Example: Adjust navigation styles for mobile */
+    .topnav {
+      font-size:  14px; 
+      
+    }
+    
+    /* Add more styles as needed for a better mobile experience */
+  }
+
+/* Media query for mobile view */
+@media only screen and (max-width: 600px) {
+  .topnav {
+    flex-direction: column; /* Display links vertically for small screens */
+  }
+
+  .topnav a {
+    text-align: start; /* Center-align the text */
+    padding: 10px; /* Add some padding for better touch interactions */
+  }
+}
+
+</style>
 
 <body>
   <div class="cursor">
@@ -249,32 +282,29 @@
    </div>
    <div class="color2" id="popupp">
     <h1>Contact</h1>
-    <div class="container5">
+    <!-- <div class="container5"> -->
       <button class="btn2" onclick="toggle()">close</button>
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-          <option value="usa">India</option>
-        </select>
-    
-        <label for="subject">Comment/write</label>
-        <textarea id="subject" name="subject" placeholder="Write a Comment" style="height:200px"></textarea>
-        
-        <input type="submit" value="Submit">
+      <form action="" id="contactForm">
+        <div class="alert">Your message sent</div>
 
+        <div class="inputBox">
+            <input type="text" id="name" placeholder="Your name...." />
+        </div>
 
-      </form>
+        <div class="inputBox">
+            <input type="email" id="emailid" placeholder="Your Email....." />
+        </div>
+
+        <div class="inputBox">
+            <textarea id="msgContent" cols="30" rows="10" placeholder="Message"></textarea>
+        </div>
+
+        <div class="inputBox">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
     </div>
-  </div>
+  <!-- </div> -->
 
    <div class="new2">
   <footer class="footer">
@@ -310,7 +340,11 @@
   </footer>
 </div>
   </div>
+  <script src="portfolio.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src= "https://www.gstatic.com/firebasejs/3.7.4/firebase.js">
 
+  </script>
   <script type="text/javascript">
     window.onscroll = function () { myFunction() };
 
@@ -349,40 +383,7 @@
       var popupp = document.getElementById('popupp');
       popupp.classList.toggle('active')
      }
-    // const cursor = document.querySelector(".cursor");
-
-    // document.addEventListener("mousemove",(e) => {
-    //   let x = e.pageX;
-    //   let y = e.pageY;
-
-    //   cursor.style.top = y + "px"
-    //   cursor.style.left = x + "px"
-    // })
-    // document.addEventListener("mouseout",() => {
-    //   cursor.style.display = "none";
-    // })
-
-    // window.addEventListener('scroll', reveal);
-
-    // function reveal(){
-    //   var reveals = document.querySelectorAll('.reveal');
-
-    //   for(var i = 0; i < reveals.lenght; i++){
-        
-    //     var windowheight = window.innerHeight;
-    //     var revealtop = reveals[i].getBoundingClientRect().top;
-    //     var revealpoint = 100;
-
-    //     if(revealtop < windowheight - revealpoint){
-    //       reveals[i].classList.add('active');
-
-    //     }
-    //     else{
-    //       reveals[i].classList.remove('active');
-    //     }
-    //   }
-    // }
-
+     
     function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
@@ -400,6 +401,7 @@
 }
 
 window.addEventListener("scroll", reveal);
+
 
   </script>
 
